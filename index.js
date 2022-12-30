@@ -1,18 +1,46 @@
 
-
 // Get Time
+
 function refreshTime() {
   const timeDisplay = document.getElementById("time");
   const dateString = new Date().toLocaleTimeString();
   const formattedString = dateString.replace(", ", " - ");
   timeDisplay.textContent = formattedString;
 }
-  setInterval(refreshTime, 100);
+setInterval(refreshTime, 100);
 
-  
+// Get Location
+function getlocation() {
+    const location = document.querySelector('#location');
+
+    if (!navigator.geolocation) {
+        location.textContent = `Your browser doesn't support Geolocation`;
+        location.classList.add('error');
+        return;
+    }
+
+    navigator.geolocation.getCurrentPosition(onSuccess, onError);
+
+    // handle success case
+    function onSuccess(position) {
+        const {
+            latitude,
+            longitude
+        } = position.coords;
+
+        location.classList.add('success');
+        location.textContent = `(${latitude}, ${longitude})`;
+    };
+
+    // handle error case
+    function onError() {
+        location.classList.add('error');
+        location.textContent = `Failed to get your location!`;
+    };
+
+}
+getlocation()
 // Loader
-
-
 function loader() {
 
     setTimeout(function(){
