@@ -3,9 +3,38 @@
 
 }
 
-
+/* body {
+	margin: 0px;
+} */
 
 /* -- LOADER -- */
+
+#container {
+	/* Center the text in the viewport. */
+	position: absolute;
+	margin: auto;
+	width: 100vw;
+	height: 80pt;
+	top: 0;
+	bottom: 0;
+	
+	/* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
+	filter: url(#threshold) blur(0.6px);
+}
+
+/* Your average text styling */
+#text1, #text2 {
+	position: absolute;
+	width: 100%;
+	display: inline-block;
+	
+	font-family: 'Raleway', sans-serif;
+	font-size: 80pt;
+	
+	text-align: center;
+	
+	user-select: none;
+}
 
 .loader-hidden {
     opacity: 0;
@@ -24,42 +53,4 @@
   /* background-color: #34495e; */
   background-color: white;
   transition: 0.5s;
-}
-
-.line {
-  animation: expand 1s ease-in-out infinite;
-  border-radius: 10px;
-  display: inline-block;
-  transform-origin: center center;
-  margin: 0 3px;
-  width: 1px;
-  height: 25px;
-}
-
-.line:nth-child(1) {
-  background: #27ae60;
-}
-
-.line:nth-child(2) {
-  animation-delay: 180ms;
-  background: #f1c40f;
-}
-
-.line:nth-child(3) {
-  animation-delay: 360ms;
-  background: #e67e22;
-}
-
-.line:nth-child(4) {
-  animation-delay: 540ms;
-  background: #2980b9;
-}
-
-@keyframes expand {
-  0% {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(2);
-  }
 }
