@@ -7,14 +7,14 @@ function refreshTime() {
   const formattedString = dateString.replace(", ", " - ");
   timeDisplay.textContent = formattedString;
 }
-setInterval(refreshTime, 100);
+setInterval(refreshTime, 1000);
 
 // Get Location
 function getlocation() {
     const location = document.querySelector('#location');
 
     if (!navigator.geolocation) {
-        location.textContent = `Your browser doesn't support Geolocation`;
+        location.textContent = `N/A`;
         location.classList.add('error');
         return;
     }
@@ -35,7 +35,7 @@ function getlocation() {
     // handle error case
     function onError() {
         location.classList.add('error');
-        location.textContent = `Failed to get your location!`;
+        location.textContent = `n/a`;
     };
 
 }

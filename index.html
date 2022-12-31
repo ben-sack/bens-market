@@ -7,15 +7,25 @@
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:900&display=swap">
     <link rel="stylesheet" href="main.css">
-
-
+    <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="assets/d4b9d411.ico">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
     <title>Bens.World</title>
 </head>
 
 <body onload="loader()" style="visibility: hidden;">
     
-    
-    
+    <div class="pl">
+        <div class="pl__outer-ring"></div>
+        <div class="pl__inner-ring"></div>
+        <div class="pl__track-cover"></div>
+        <div class="pl__ball">
+            <div class="pl__ball-texture"></div>
+            <div class="pl__ball-outer-shadow"></div>
+            <div class="pl__ball-inner-shadow"></div>
+            <div class="pl__ball-side-shadows"></div>
+        </div>
+    </div>
     <div class="loader" style="visibility: visible;">
         <!-- The two texts -->
         <div id="container">
@@ -44,12 +54,9 @@
         
         <div style="font-size: 10px;opacity: 0.7;" id="location"></div>
         
-        <span style="position: fixed; top: 1rem; right: 1rem;"> bens.world </span>
+        <span class="menu"> bens.world </span>
     </header>
 
-
     <script src="index.js"></script>
-    
-
 </body>
 </html>
