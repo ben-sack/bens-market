@@ -5,6 +5,7 @@
 
 body {
     overflow: hidden;
+    
 }
 
 /* -- Menu -- */
@@ -15,9 +16,47 @@ body {
     right: 1rem;
     font-family: 'Gruppo'
 }
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
 /* -- LOADER -- */
+
+#loader {
+    width: 27px;
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -14px;
+  }
+  
+  #loader b {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: black;
+    margin: 2px;
+  }
 
 #container {
 	/* Center the text in the viewport. */
@@ -51,6 +90,11 @@ body {
     display: none;
 }
 
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
 .loader {
   position: fixed;
   top: 0;
@@ -65,12 +109,44 @@ body {
   transition: 0.5s;
 }
 
-* {
-	border: 0;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+.line {
+  animation: expand 1s ease-in-out infinite;
+  border-radius: 10px;
+  display: inline-block;
+  transform-origin: center center;
+  margin: 0 3px;
+  width: 1px;
+  height: 25px;
 }
+
+.line:nth-child(1) {
+  background: #27ae60;
+}
+
+.line:nth-child(2) {
+  animation-delay: 180ms;
+  background: #f1c40f;
+}
+
+.line:nth-child(3) {
+  animation-delay: 360ms;
+  background: #e67e22;
+}
+
+.line:nth-child(4) {
+  animation-delay: 540ms;
+  background: #2980b9;
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(2);
+  }
+}
+
 :root {
 	font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320));
 }
@@ -95,6 +171,12 @@ body {
 	position: relative;
 	width: 16em;
 	height: 16em;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+    animation-delay: 2.5s
 }
 .pl__ball,
 .pl__ball-inner-shadow,
