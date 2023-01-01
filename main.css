@@ -30,7 +30,8 @@ a:hover {
     position: fixed;
     top: 1rem;
     right: 1rem;
-    font-family: 'Gruppo'
+    font-family: 'Gruppo';
+	cursor: default;
 }
 @keyframes fadein {
     from { opacity: 0; }

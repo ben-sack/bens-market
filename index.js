@@ -51,3 +51,13 @@ function loader() {
     }, 2500)
 
 }
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2000,
+    delay: 2000,
+//     reset: true
+});
+
+sr.reveal('.skills__img',{interval: 100}); 

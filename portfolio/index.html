@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/portfolio.css">
+
+
+    <title>work</title>
+</head>
+<body id="body" onload="loader();" style="visibility: hidden;">
+    
+    <div id="loader" style="visibility: visible;"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
+    <script>
+        var count = 1,
+            allocations = new Array(1,2,3,6,9,8,7,4),
+            animate = setInterval(function() {
+        $("#loader b").css("background","black");
+        $("#loader b:nth-child("+allocations[count]+")").css("background","white");
+        count++;
+        if (count==8) {
+            count = 1;
+        }
+        },150);
+    </script>
+
+    <header class="header">
+        <span style="opacity: 0.7;" id="time"> </span>
+        <div style="font-size: 10px;opacity: 0.7;" id="location"></div>
+        <span class="menu"><a href="/"> bens.world </a> </span>
+    </header>
+
+
+    <section class="work section" id="work">
+
+        <div style="overflow: hidden;" class="skills__container bd-grid">
+            <a href="#" class="skills__img" id="python" data-tilt>
+                <img src="/assets/python.png" alt="">
+            </a>
+            <a href="#" class="skills__img" id="sql" data-tilt>
+                <img src="/assets/sql.png" alt="">
+            </a>
+            <a href="#" class="skills__img" id="prefect" data-tilt>
+                <img src="/assets/prefect.png" alt="">
+            </a>
+            <a href="#" class="skills__img" id="js" data-tilt>
+                <img src="/assets/js.png" alt="">
+            </a>
+            <a href="#" class="skills__img" id="html" data-tilt>
+                <img src="/assets/html.png" alt="">
+            </a>
+            <a href="#" class="skills__img" id="css" data-tilt>
+                <img src="/assets/css.png" alt="">
+            </a>
+            <a href="#" class="skills__img" id="snowflake" data-tilt>
+                <img src="/assets/snowflake.png" alt="">
+            </a>
+            <a href="#" class="skills__img" id="aws" data-tilt>
+                <img src="/assets/aws.png" alt="">
+            </a>
+            <a href="#" class="skills__img" id="fivetran" data-tilt>
+                <img src="/assets/fivetran.png" alt="">
+            </a>
+            <a href="#" class="skills__img" id="kafka"data-tilt>
+                <img src="/assets/kafka.png" alt="">
+            </a>
+            <a href="#" class="skills__img" id="hvr" data-tilt>
+                <img src="/assets/hvr.png" alt="">
+            </a>
+            <a href="#" class="skills__img" id="splunk" data-tilt>
+                <img src="/assets/splunk.png" alt="">
+            </a>
+            <a href="#" class="skills__img" id="git" data-tilt>
+                <img src="/assets/git.png" alt="">
+            </a>
+            <a href="#" class="skills__img" id="github" data-tilt>
+                <img src="/assets/github.png" alt="">
+            </a>
+            <a href="#" class="skills__img" id="bash" data-tilt>
+                <img src="/assets/bash.png" alt="">
+            </a>
+        </div>
+    </section>
+    
+
+    <!--==================== MAIN JS ====================-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/index.js"></script>
+
+</body>
+</html>
