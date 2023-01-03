@@ -1,9 +1,10 @@
 :root{
     --shadow: rgba(14, 36, 49, 0.15);
     --img-color: hsl(223, 90%, 95%);
+	font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320));
+
 
 }
-  
 body{
 	background-color: hsl(223, 90%, 95%);
 }

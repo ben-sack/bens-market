@@ -8,6 +8,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="/portfolio.css">
+    <link rel="icon" type="image/png" href="/assets/d4b9d411.ico">
+
 
 
     <title>work</title>
@@ -89,6 +91,20 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '60px',
+            duration: 2000,
+            delay: 2000,
+        //     reset: true
+        });
+
+        sr.reveal('.skills__img',{interval: 100}); 
+    </script>
+
     <script src="/index.js"></script>
 
 </body>

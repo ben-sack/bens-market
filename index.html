@@ -55,7 +55,30 @@
         <span class="menu"> bens.world </span>
     </header>
 
+     
+    <div class="music">
+        <div class="circle">
+            <span onclick="toggleMusic();" class="circle__btn">
+              <ion-icon class="pause" name="pause"></ion-icon>
+              <ion-icon  class="play" name="play"></ion-icon>
+            </span>
+            <span class="circle__back-1"></span>
+            <span class="circle__back-2"></span>
+        </div>
+        <!-- <div class="title__container">
+            <div class="title">
+                <span>Like the Old Days - Barry Cant Swim</span>
+            </div>
+        </div> -->
+
+    </div>
+
+    <audio autoplay src="/assets/barry.mp3" id="track" loop></audio>
+      
+
 
     <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
 </body>
 </html>

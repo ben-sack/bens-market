@@ -52,12 +52,36 @@ function loader() {
 
 }
 
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2000,
-    delay: 2000,
-//     reset: true
+
+/*  play button */
+const play = document.querySelector(".play");
+const pause = document.querySelector(".pause");
+const playBtn = document.querySelector(".circle__btn");
+const wave1 = document.querySelector(".circle__back-1");
+const wave2 = document.querySelector(".circle__back-2");
+
+/*  play button  */
+playBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    pause.classList.toggle("visibility");
+    play.classList.toggle("visibility");
+    playBtn.classList.toggle("shadow");
+    wave1.classList.toggle("paused");
+    wave2.classList.toggle("paused");
 });
 
-sr.reveal('.skills__img',{interval: 100}); 
+
+function toggleMusic () {
+    var audio = document.getElementById('track');
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+    
+};
+
+// var audio = document.getElementById('track');
+// audio.play();
+
+
