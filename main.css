@@ -27,12 +27,23 @@ a:hover {
     opacity: 0.5;
 }
 
+
+video {
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+  }
+
+
 /* -- Menu -- */
 .menu {
     opacity: 0.7;
     position: fixed;
     top: 1rem;
-    right: 1rem;
+    left: 1rem;
     font-family: 'Gruppo';
 	cursor: default;
 }
@@ -99,17 +110,18 @@ a:hover {
 
 :root {
 	font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320));
-	--primary-light: #8abdff;
+	--primary-light: #f7ecde;
 	--primary: grey;
 	--primary-dark: #5b0eeb;
 	--white: #FFFFFF;
-	--greyLight-1: #E4EBF5;
-	--greyLight-2: #c8d0e7;
-	--greyLight-3: #bec8e4;
-	--greyDark: #9baacf;
+	--greyLight-1: #f7ecde;
+	--greyLight-2: #f7ecde;
+	--greyLight-3: lightgrey;
+	--greyDark: darkgrey;
 }
 body {
-	background-color: hsl(223, 90%, 95%);
+	/* background-color: hsl(223, 90%, 95%); */
+	background-color: #fbf5e7;
 	font: 1em/1.5 sans-serif;
 	height: 100vh;
 	display: grid;
@@ -289,10 +301,13 @@ body {
 }
 
 .music{
-	width: 100%;
     position: fixed;
-    scale: 0.3;
-	bottom: 0;
+    /* scale: 0.2; */
+	bottom: 0.7rem;
+	right: 1rem;
+	/* grid-template-columns: repeat(1, 1fr); */
+
+
 }
 
 /*  PLAY BUTTON  */
@@ -311,14 +326,14 @@ body {
   .circle__btn {
 	grid-row: 1/2;
 	grid-column: 1/2;
-	width: 6rem;
-	height: 6rem;
+	width: 1rem;
+	height: 1rem;
 	display: flex;
 	margin: 0.6rem;
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
-	font-size: 3.2rem;
+	font-size: 0.4rem;
 	color: var(--primary);
 	z-index: 300;
 	background: var(--greyLight-1);
@@ -331,25 +346,25 @@ body {
   }
   .circle__btn .play {
 	position: absolute;
-	opacity: 1;
+	opacity: 0;
 	transition: all 0.2s linear;
   }
   .circle__btn .play.visibility {
-	opacity: 0;
+	opacity: 1;
   }
   .circle__btn .pause {
 	position: absolute;
-	opacity: 0;
+	opacity: 1;
 	transition: all 0.2s linear;
   }
   .circle__btn .pause.visibility {
-	opacity: 1;
+	opacity: 0;
   }
   .circle__back-1, .circle__back-2 {
 	grid-row: 1/2;
 	grid-column: 1/2;
-	width: 6rem;
-	height: 6rem;
+	width: 1.5rem;
+	height: 1.5rem;
 	border-radius: 50%;
 	filter: blur(1px);
 	z-index: 100;
@@ -402,19 +417,24 @@ body {
 	}
   }
 
-/* .title{
-	font-size: 1.65rem;
+.title{
+	position: fixed;
+	top: 3.35rem;
+	right: 3rem;
+	font-size: 0.3rem;
     opacity: 0.5;
-    padding-top: 2rem;
-    text-align: center;
+    text-align: left;
 	white-space: nowrap;
+	animation: move-left-to-right linear 5s infinite;
 
 }
 
+
 .title__container{
 	overflow: hidden;
-	animation: move-left-to-right linear 5s infinite;
-} */
+	width: 10px;
+
+}
 
 /* use this one to move from left to right direction */
 @keyframes move-left-to-right {
@@ -443,5 +463,9 @@ body {
 		left: 15vw;
 		top: 20vh;
 	}
+
+	video {
+		top: -1rem;
+	  }
 	
   }

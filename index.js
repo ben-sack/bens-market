@@ -1,45 +1,45 @@
 
 // Get Time
 
-function refreshTime() {
-  const timeDisplay = document.getElementById("time");
-  const dateString = new Date().toLocaleTimeString();
-  const formattedString = dateString.replace(", ", " - ");
-  timeDisplay.textContent = formattedString;
-}
-setInterval(refreshTime, 1000);
+// function refreshTime() {
+//   const timeDisplay = document.getElementById("time");
+//   const dateString = new Date().toLocaleTimeString();
+//   const formattedString = dateString.replace(", ", " - ");
+//   timeDisplay.textContent = formattedString;
+// }
+// setInterval(refreshTime, 1000);
 
 // Get Location
-function getlocation() {
-    const location = document.querySelector('#location');
+// function getlocation() {
+//     const location = document.querySelector('#location');
 
-    if (!navigator.geolocation) {
-        location.textContent = `N/A`;
-        location.classList.add('error');
-        return;
-    }
+//     if (!navigator.geolocation) {
+//         location.textContent = `N/A`;
+//         location.classList.add('error');
+//         return;
+//     }
 
-    navigator.geolocation.getCurrentPosition(onSuccess, onError);
+//     navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
-    // handle success case
-    function onSuccess(position) {
-        const {
-            latitude,
-            longitude
-        } = position.coords;
+//     // handle success case
+//     function onSuccess(position) {
+//         const {
+//             latitude,
+//             longitude
+//         } = position.coords;
 
-        location.classList.add('success');
-        location.textContent = `(${latitude}, ${longitude})`;
-    };
+//         location.classList.add('success');
+//         location.textContent = `(${latitude}, ${longitude})`;
+//     };
 
-    // handle error case
-    function onError() {
-        location.classList.add('error');
-        location.textContent = `n/a`;
-    };
+//     // handle error case
+//     function onError() {
+//         location.classList.add('error');
+//         location.textContent = `n/a`;
+//     };
 
-}
-getlocation()
+// }
+// getlocation()
 // Loader
 function loader() {
 
@@ -85,3 +85,17 @@ function toggleMusic () {
 // audio.play();
 
 
+// Video Play
+
+var vid = document.getElementById("bgvid");
+
+function toggleVid() {
+    if (vid.paused) {
+        console.log("video is stopped");
+        vid.play()
+    } else {
+        console.log("video is playing");
+        vid.pause();
+    }
+    
+}

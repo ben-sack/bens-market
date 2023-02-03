@@ -14,8 +14,12 @@
 </head>
 
 <body onload="loader();" style="visibility: hidden;">
-    
-    <div class="pl">
+
+    <video playsinline autoplay loop muted id="bgvid">
+        <source src="/assets/loop.mp4" type="video/mp4">
+      </video>
+
+    <!-- <div class="pl">
         <div class="pl__outer-ring"></div>
         <div class="pl__inner-ring"></div>
         <div class="pl__track-cover"></div>
@@ -33,7 +37,7 @@
             <a href="#">market</a>
         </div>
 
-    </div>
+    </div> -->
 
     <div id="loader" style="visibility: visible;"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
     <script>
@@ -50,30 +54,22 @@
     </script>
 
     <header class="header">
-        <span style="opacity: 0.7;" id="time"> </span>
-        <div style="font-size: 10px;opacity: 0.7;" id="location"></div>
+        <!-- <span style="opacity: 0.7;" id="time"> </span> -->
+        <!-- <div style="font-size: 10px;opacity: 0.7;" id="location"></div> -->
         <span class="menu"> bens.world </span>
     </header>
 
-     
+    
     <div class="music">
         <div class="circle">
-            <span onclick="toggleMusic();" class="circle__btn">
+            <span onclick="toggleVid();" class="circle__btn shadow">
               <ion-icon class="pause" name="pause"></ion-icon>
               <ion-icon  class="play" name="play"></ion-icon>
             </span>
-            <span class="circle__back-1"></span>
-            <span class="circle__back-2"></span>
+            <span class="circle__back-1 paused"></span>
+            <span class="circle__back-2 paused"></span>
         </div>
-        <!-- <div class="title__container">
-            <div class="title">
-                <span>Like the Old Days - Barry Cant Swim</span>
-            </div>
-        </div> -->
-
     </div>
-
-    <audio autoplay src="/assets/barry.mp3" id="track" loop></audio>
       
 
 
