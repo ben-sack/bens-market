@@ -454,9 +454,18 @@ body {
         transform: translateX(-50%);
     }
 }
+@media screen and (min-width: 770px) {
+	#menu{
+		top: 2.5rem;
+		right: 1.35rem;
+	}
+}
 
   @media screen and (max-width: 770px) {
-
+	#menu {
+		top: 3rem;
+		right: 1.7rem;
+	}
 	.pl{
 		position: fixed;
 		left: 15vw;
@@ -499,7 +508,7 @@ body {
 #toggle span:after,
 #toggle span:before {
   width: 100%;
-  height: 5px;
+  height: 1px;
   background-color: #888;
   transition: all 0.3s;
   backface-visibility: hidden;
@@ -517,16 +526,13 @@ body {
   transform: rotate(-45deg) translate(7px, -8px);
 }
 #toggle.on + #menu {
-  opacity: 1;
+  opacity: 0.8;
   visibility: visible;
 }
 
 /* menu appearance*/
 #menu {
-
   position: fixed;
-  top: 3rem;
-  right: 0.5rem;
   color: #999;
   width: 200px;
   padding: 10px;
@@ -563,18 +569,19 @@ li a {
   padding: 5px;
   color: #888;
   text-decoration: none;
-  transition: all 0.2s;
+  transition: all 1s;
 }
 li a:hover,
 li a:focus {
-  background: #1abc9c;
+  /* background: #1abc9c; */
+  background: #fcb85f;
   color: #fff;
 }
 
 /* demo styles */
-body {
+/* body {
   margin-top: 3em;
-  background: #eee;
+  background: #fbf5e7;
   color: #555;
   font-family: "Open Sans", "Segoe UI", Helvetica, Arial, sans-serif;
 }
@@ -583,4 +590,4 @@ p a {
   font-size: 12px;
   text-align: center;
   color: #888;
-}
+} */
