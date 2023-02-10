@@ -2073,15 +2073,15 @@
                               label: "Home",
                               children: (0, r.jsx)(eT, {})
                           }), (0, r.jsx)(eE, {
-                              href: "/craft",
+                              href: "/craft/",
                               label: "Craft",
                               children: (0, r.jsx)(eR, {})
                           }), (0, r.jsx)(eE, {
-                              href: "/projects",
+                              href: "/projects/",
                               label: "Projects",
                               children: (0, r.jsx)(ej, {})
                           }), (0, r.jsx)(eE, {
-                              href: "/photos",
+                              href: "/photos/",
                               label: "Photos",
                               children: (0, r.jsx)(eM, {})
                           }), (0, r.jsx)(eC, {}), (0, r.jsx)(eE, {
