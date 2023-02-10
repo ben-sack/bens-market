@@ -2460,7 +2460,7 @@
                       }), !ey.r8 && (0, r.jsx)("script", {
                           defer: !0,
                           src: "/js/script.js",
-                          "data-cf-beacon": '{"token": "d6d27ce03c074b42a45de0406889ef71"}'
+                          "data-cf-beacon": '{"token": "d49bf49f0d75a059c7fb4f5460803075"}'
                       })]
                   }), (0, r.jsx)(s.h, {}), (0, r.jsxs)(f.f, {
                       disableTransitionOnChange: !0,
