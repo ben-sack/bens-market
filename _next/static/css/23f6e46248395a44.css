@@ -11,14 +11,14 @@ body {
     font-family: X;
     font-weight: 400;
     font-display: swap;
-    src: url(../../../X-Regular.woff2) format("woff2")
+    src: url(/X-Regular.woff2) format("woff2")
 }
 
 @font-face {
     font-family: X;
     font-weight: 500;
     font-display: swap;
-    src: url(../../../X-Medium.woff2) format("woff2")
+    src: url(/X-Medium.woff2) format("woff2")
 }
 
 h1,
