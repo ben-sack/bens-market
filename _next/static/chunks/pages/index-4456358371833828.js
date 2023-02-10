@@ -565,7 +565,7 @@
                             css: {
                                 color: "$gray11"
                             },
-                            children: "Sack, Benjamin."
+                            children: "Bens Market."
                         }), " ", "Creating", (0, r.jsx)(N, {
                             className: T({})
                         }), "products that ", (0, r.jsx)(G, {
@@ -576,23 +576,23 @@
                             children: "n"
                         }), "eer unsatisfiably", (0, r.jsx)(U, {
                             className: T()
-                        }), "curious about nove", (0, r.jsx)(p.x, {
+                        }), "curious ", (0, r.jsx)(p.x, {
                             css: {
                                 display: "inline-block",
                                 fontStyle: "italic"
                             },
-                            children: "l"
-                        }), " interfaces. Trying to", (0, r.jsx)(q, {
-                            className: T({
-                                css: {
-                                    transform: "translate(2px, 5px)"
-                                }
-                            })
-                        }), "pai", (0, r.jsx)(G, {
-                            children: "n"
-                        }), "t with code. Relentlessly devoted to fine, detailed", (0, r.jsx)(Q, {
-                            className: T()
-                        }), "polish. Always seeking o", (0, r.jsx)(G, {
+                            children: " - "
+                        // }), " Trying to", (0, r.jsx)(q, {
+                        //     className: T({
+                        //         css: {
+                        //             transform: "translate(2px, 5px)"
+                        //         }
+                        //     })
+                        // }), "pai", (0, r.jsx)(G, {
+                        //     children: "n"
+                        // }), "t with code. Relentlessly devoted to the fine details", (0, r.jsx)(Q, {
+                            // className: T()
+                        }), " Always seeking o", (0, r.jsx)(G, {
                             children: "u"
                         }), "t the", (0, r.jsx)(Y, {
                             className: T({
