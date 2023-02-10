@@ -2075,12 +2075,12 @@
                           }),
                             (0, r.jsx)(eE, {
                             href: "/projects/",
-                            label: "Projects",
+                            label: "Work",
                             children: (0, r.jsx)(ej, {})
                             }),
                             (0, r.jsx)(eE, {
                               href: "/craft/",
-                              label: "Craft",
+                              label: "Market",
                               children: (0, r.jsx)(eR, {})
                           }), (0, r.jsx)(eE, {
                               href: "/photos/",
