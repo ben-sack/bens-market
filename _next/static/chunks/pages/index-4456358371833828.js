@@ -601,10 +601,8 @@
                                 }
                             })
                         }), "cutting edge in my craft. Currently at ", (0, r.jsx)(y, {
-                            href: "https://disneystreaming.com",
                             children: "Disney"
                         }), ". Previously at", " ", (0, r.jsx)(y, {
-                            href: "https://progressive.com",
                             children: "Progressive"
                         }), "."]
                     })]

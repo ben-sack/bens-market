@@ -2072,14 +2072,16 @@
                               href: "/",
                               label: "Home",
                               children: (0, r.jsx)(eT, {})
-                          }), (0, r.jsx)(eE, {
+                          }),
+                            (0, r.jsx)(eE, {
+                            href: "/projects/",
+                            label: "Projects",
+                            children: (0, r.jsx)(ej, {})
+                            }),
+                            (0, r.jsx)(eE, {
                               href: "/craft/",
                               label: "Craft",
                               children: (0, r.jsx)(eR, {})
-                          }), (0, r.jsx)(eE, {
-                              href: "/projects/",
-                              label: "Projects",
-                              children: (0, r.jsx)(ej, {})
                           }), (0, r.jsx)(eE, {
                               href: "/photos/",
                               label: "Photos",
@@ -2096,7 +2098,7 @@
                               })
                           }), (0, r.jsx)(eE, {
                               label: "Mail",
-                              href: "mailto:yo@bens.world",
+                              href: "mailto:yo@bens.market",
                               children: (0, r.jsx)(eP, {})
                           }), (0, r.jsx)(eC, {}), (0, r.jsx)(eE, {
                               label: "Toggle theme",
