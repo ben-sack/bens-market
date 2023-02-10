@@ -181,17 +181,17 @@
                 photoUrl: "/static/flow-light.png",
                 year: 2021
             }, {
+                name: "UI Playbook",
+                description: "An insipred collection of UI components",
+                href: "/craft/",
+                photoUrl: "/static/playbook-light.png",
+                year: 2021
+            }, {
                 name: "Indiana University",
                 description: "Fundamentals of Python instructor",
                 href: "https://iu.edu",
                 photoUrl: "/static/inspx-light.png",
                 year: 2021
-            }, {
-                name: "UI Playbook",
-                description: "An insipred collection of UI components",
-                href: "/craft/",
-                photoUrl: "/static/playbook-light.png",
-                year: 2020
             }];
 
             function u() {
