@@ -2505,7 +2505,7 @@
 
           function r(e) {
               let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : .01;
-              return "".concat("https://cdn.rauno.me", "/").concat(e, "#t=").concat(t)
+              return "".concat("https://cdn.bens.market", "/").concat(e, "#t=").concat(t)
           }
 
           function i(e) {
