@@ -2020,8 +2020,8 @@
                       ".dark &": {
                           background: "rgba(22, 22, 22, 0.8)"
                       },
-                      "@media (max-width: 430px)": {
-                          width: "calc(100% - 59px)",
+                      "@media (max-width: 374px)": {
+                          width: "calc(100% - 69px)",
                           top: "unset",
                           bottom: 0
                       }
