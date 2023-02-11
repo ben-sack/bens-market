@@ -183,7 +183,7 @@
             }, {
                 name: "UI Playbook",
                 description: "An insipred collection of UI components",
-                href: "/craft/",
+                href: "/craft",
                 photoUrl: "/static/playbook-light.png",
                 year: 2021
             }, {

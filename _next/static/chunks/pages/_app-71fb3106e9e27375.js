@@ -515,7 +515,7 @@
               "'": "&apos;"
           })).join("") + "]", "g");
           var h = n(1163);
-          let p = "https://rauno.me";
+          let p = "https://bens.market";
 
           function f(e) {
               let {
@@ -2074,12 +2074,12 @@
                               children: (0, r.jsx)(eT, {})
                           }),
                             (0, r.jsx)(eE, {
-                            href: "/projects/",
+                            href: "/projects",
                             label: "Work",
                             children: (0, r.jsx)(ej, {})
                             }),
                             (0, r.jsx)(eE, {
-                              href: "/craft/",
+                              href: "/craft",
                               label: "Market",
                               children: (0, r.jsx)(eR, {})
                           }), (0, r.jsx)(eE, {
@@ -2486,7 +2486,7 @@
                               ...("/projects" === o.route || o.route.startsWith("/craft/")) && {
                                   maxWidth: 720
                               },
-                              ..."/craft" === o.route && {
+                              ..."/craft" === o.route  && {
                                   padding: "8px 0px 4px 4px"
                               },
                               ..."/photos" === o.route && {

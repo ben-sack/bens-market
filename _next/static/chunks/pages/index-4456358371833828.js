@@ -467,27 +467,27 @@
             let S = [{
                 type: "Shader",
                 title: "Gooey",
-                href: "/craft/",
+                href: "/craft",
                 src: (0, k.jj)("gooey.mp4")
             }, {
                 type: "Shader",
                 title: "Stripes",
-                href: "/craft/",
+                href: "/craft",
                 src: (0, k.jj)("stripes.mp4")
             }, {
                 type: "Shader",
                 title: "Flume",
-                href: "/craft/",
+                href: "/craft",
                 src: (0, k.jj)("flume.mp4")
             }, {
                 type: "Shader",
                 title: "Peach",
-                href: "/craft/",
+                href: "/craft",
                 src: (0, k.jj)("peach.mp4")
             }, {
                 type: "Shader",
                 title: "Rainbow",
-                href: "/craft/",
+                href: "/craft",
                 src: (0, k.jj)("rainbow.mp4")
             }
             // ,{

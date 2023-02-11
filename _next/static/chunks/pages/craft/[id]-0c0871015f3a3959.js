@@ -2563,7 +2563,7 @@
                         description: u,
                         ogUrl: "/static/craft/og-".concat(t, ".png")
                     }), (0, n.jsxs)(ec(), {
-                        href: "/craft/",
+                        href: "/craft",
                         className: ef(),
                         children: [(0, n.jsx)(ew, {}), "Craft"]
                     }), (0, n.jsxs)(i.k, {
