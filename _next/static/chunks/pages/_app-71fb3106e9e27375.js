@@ -2083,7 +2083,7 @@
                               label: "Market",
                               children: (0, r.jsx)(eR, {})
                           }), (0, r.jsx)(eE, {
-                              href: "/photos/",
+                              href: "/photos",
                               label: "Photos",
                               children: (0, r.jsx)(eM, {})
                           }), (0, r.jsx)(eC, {}), (0, r.jsx)(eE, {
