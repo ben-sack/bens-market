@@ -1359,7 +1359,7 @@
 
           function l(e, t) {
               let [n] = (0, s.D)(), r = (0, a.a)("(hover: none)"), [i] = o(e, {
-                  soundEnabled: "/static/enable-sound.mp3" === e || n && !r,
+                  soundEnabled: "/_next/static/enable-sound.mp3" === e || n && !r,
                   ...t
               });
               return i
@@ -1567,7 +1567,7 @@
               y = i.forwardRef(function() {
                   let {
                       resolvedTheme: e
-                  } = (0, f.F)(), [t, n] = i.useState(!1), o = i.useRef(!1), a = (0, m.c)("/static/bleep.mp3"), s = "dark" === e ? "dark" : "light";
+                  } = (0, f.F)(), [t, n] = i.useState(!1), o = i.useRef(!1), a = (0, m.c)("/_next/static/blow.mp3"), s = "dark" === e ? "dark" : "light";
                   i.useEffect(() => n(!0), []);
                   let l = (0, d.q)(v[s].rotate, g),
                       u = (0, d.q)(v[s].r, g),
@@ -1685,7 +1685,7 @@
           });
 
           function k() {
-              let [e, t] = i.useState(!1), [n, o] = i.useState(!1), [a, s] = (0, x.D)(), u = (0, m.c)("/static/enable-sound.mp3"), c = (0, m.c)("/static/disable-sound.mp3");
+              let [e, t] = i.useState(!1), [n, o] = i.useState(!1), [a, s] = (0, x.D)(), u = (0, m.c)("/_next/static/enable-sound.mp3"), c = (0, m.c)("/_next/static/disable-sound.mp3");
               return (i.useEffect(() => t(!0), []), e) ? (0, r.jsx)(eE, {
                   label: "Toggle sound",
                   onClick: () => {
@@ -2433,7 +2433,7 @@
                   router: o
               } = e;
               (0, b.W0)();
-              let u = (0, m.c)("/static/Blow.mp3"),
+              let u = (0, m.c)("/_next/static/Blow.mp3"),
                   c = i.useRef(!1);
               return i.useEffect(() => {
                   c.current && u(), c.current = !0, window.scrollTo({
