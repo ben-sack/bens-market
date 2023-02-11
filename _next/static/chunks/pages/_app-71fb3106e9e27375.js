@@ -2082,11 +2082,13 @@
                               href: "/craft",
                               label: "Market",
                               children: (0, r.jsx)(eR, {})
-                          }), (0, r.jsx)(eE, {
-                              href: "/photos",
-                              label: "Photos",
-                              children: (0, r.jsx)(eM, {})
-                          }), (0, r.jsx)(eC, {}), (0, r.jsx)(eE, {
+                          }), 
+                        //   (0, r.jsx)(eE, {
+                        //       href: "",
+                        //       label: "❌ 🚧 ❌",
+                        //       children: (0, r.jsx)(eM, {})
+                        //   })
+                          , (0, r.jsx)(eC, {}), (0, r.jsx)(eE, {
                               label: "Twitter",
                               href: "https://twitter.com/bensack_",
                               children: (0, r.jsx)(eA, {})
