@@ -2318,101 +2318,104 @@
                 dark: !0,
                 requiresPointer: !0
             },
+            // {
+            //     date: "October 2022",
+            //     title: "Flashlight Tabs",
+            //     src: "flashlight.mp4",
+            //     component: (0, n.jsx)(function() {
+            //         let {
+            //             speed: e
+            //         } = ep(), [t, r] = o.useState(2);
+            //         return (0, n.jsx)(n.Fragment, {
+            //             children: (0, n.jsx)(ee.Provider, {
+            //                 value: {
+            //                     active: t,
+            //                     setActive: r
+            //                 },
+            //                 children: (0, n.jsxs)(c.x, {
+            //                     as: h.E.div,
+            //                     css: {
+            //                         width: "fit-content",
+            //                         d: "flex",
+            //                         height: 48,
+            //                         br: 9999,
+            //                         position: "relative",
+            //                         border: "1px solid $gray6",
+            //                         boxShadow: "var(--shadows-small)",
+            //                         focus: !0,
+            //                         "&:after": {
+            //                             content: "",
+            //                             background: "linear-gradient(\n                to left,\n                var(--colors-gray6) 20%,\n                var(--colors-gray6) 44%,\n                var(--colors-gray11) 50%,\n                var(--colors-gray10) 55%,\n                var(--colors-gray6) 63%,\n                var(--colors-gray6) 100%\n              )",
+            //                             zIndex: 1,
+            //                             pointerEvents: "none",
+            //                             backgroundPositionX: ["100%", "70%", "50%", "25%", "0%"][t],
+            //                             backgroundSize: "200% auto",
+            //                             position: "absolute",
+            //                             borderRadius: "inherit",
+            //                             bottom: -1,
+            //                             left: 0,
+            //                             width: "100%",
+            //                             height: "100%",
+            //                             willChange: "background-position-x",
+            //                             transition: "background-position-x ".concat(600 * e, "ms ease"),
+            //                             "@mobile": {
+            //                                 backgroundPositionX: ["100%", null, "50%", "0%", null][t]
+            //                             }
+            //                         }
+            //                     },
+            //                     tabIndex: 1,
+            //                     onKeyDown: e => {
+            //                         console.log("Hi"), "ArrowLeft" === e.key && r(e => 0 === e ? 0 : e - 1), "ArrowRight" === e.key && r(e => e === et.length - 1 ? et.length - 1 : e + 1)
+            //                     },
+            //                     children: [(0, n.jsx)(c.x, {
+            //                         "aria-hidden": !0,
+            //                         css: {
+            //                             background: "linear-gradient(90deg,\n      rgba(0, 0, 0, 0),\n      $colors$gray6 20%,\n      $colors$gray10 67.19%,\n      rgba(0, 0, 0, 0))",
+            //                             opacity: .6,
+            //                             height: "1px",
+            //                             position: "absolute",
+            //                             top: -1,
+            //                             width: "95%",
+            //                             zIndex: 1
+            //                         }
+            //                     }), (0, n.jsx)(c.x, {
+            //                         css: {
+            //                             d: "flex",
+            //                             overflow: "hidden",
+            //                             p: 5,
+            //                             br: "inherit",
+            //                             background: "$gray2",
+            //                             position: "relative",
+            //                             zIndex: 2,
+            //                             "@mobile": {
+            //                                 "button:nth-of-type(2), button:nth-of-type(5)": {
+            //                                     display: "none"
+            //                                 }
+            //                             }
+            //                         },
+            //                         children: et.map((e, t) => (0, n.jsx)(er, {
+            //                             index: t,
+            //                             children: e
+            //                         }, e))
+            //                     })]
+            //                 })
+            //             })
+            //         })
+            //     }, {}),
+            //     wrap: !0,
+            //     dark: !0
+            // },
+            //  {
+            //     date: "October 2022",
+            //     title: "Browser History",
+            //     src: "browser-history-3.mp4"
+            // }, 
+            // {
+            //     date: "October 2022",
+            //     title: "Vercel Homepage",
+            //     src: "vercel-home.mp4"
+            // }, 
             {
-                date: "October 2022",
-                title: "Flashlight Tabs",
-                src: "flashlight.mp4",
-                component: (0, n.jsx)(function() {
-                    let {
-                        speed: e
-                    } = ep(), [t, r] = o.useState(2);
-                    return (0, n.jsx)(n.Fragment, {
-                        children: (0, n.jsx)(ee.Provider, {
-                            value: {
-                                active: t,
-                                setActive: r
-                            },
-                            children: (0, n.jsxs)(c.x, {
-                                as: h.E.div,
-                                css: {
-                                    width: "fit-content",
-                                    d: "flex",
-                                    height: 48,
-                                    br: 9999,
-                                    position: "relative",
-                                    border: "1px solid $gray6",
-                                    boxShadow: "var(--shadows-small)",
-                                    focus: !0,
-                                    "&:after": {
-                                        content: "",
-                                        background: "linear-gradient(\n                to left,\n                var(--colors-gray6) 20%,\n                var(--colors-gray6) 44%,\n                var(--colors-gray11) 50%,\n                var(--colors-gray10) 55%,\n                var(--colors-gray6) 63%,\n                var(--colors-gray6) 100%\n              )",
-                                        zIndex: 1,
-                                        pointerEvents: "none",
-                                        backgroundPositionX: ["100%", "70%", "50%", "25%", "0%"][t],
-                                        backgroundSize: "200% auto",
-                                        position: "absolute",
-                                        borderRadius: "inherit",
-                                        bottom: -1,
-                                        left: 0,
-                                        width: "100%",
-                                        height: "100%",
-                                        willChange: "background-position-x",
-                                        transition: "background-position-x ".concat(600 * e, "ms ease"),
-                                        "@mobile": {
-                                            backgroundPositionX: ["100%", null, "50%", "0%", null][t]
-                                        }
-                                    }
-                                },
-                                tabIndex: 1,
-                                onKeyDown: e => {
-                                    console.log("Hi"), "ArrowLeft" === e.key && r(e => 0 === e ? 0 : e - 1), "ArrowRight" === e.key && r(e => e === et.length - 1 ? et.length - 1 : e + 1)
-                                },
-                                children: [(0, n.jsx)(c.x, {
-                                    "aria-hidden": !0,
-                                    css: {
-                                        background: "linear-gradient(90deg,\n      rgba(0, 0, 0, 0),\n      $colors$gray6 20%,\n      $colors$gray10 67.19%,\n      rgba(0, 0, 0, 0))",
-                                        opacity: .6,
-                                        height: "1px",
-                                        position: "absolute",
-                                        top: -1,
-                                        width: "95%",
-                                        zIndex: 1
-                                    }
-                                }), (0, n.jsx)(c.x, {
-                                    css: {
-                                        d: "flex",
-                                        overflow: "hidden",
-                                        p: 5,
-                                        br: "inherit",
-                                        background: "$gray2",
-                                        position: "relative",
-                                        zIndex: 2,
-                                        "@mobile": {
-                                            "button:nth-of-type(2), button:nth-of-type(5)": {
-                                                display: "none"
-                                            }
-                                        }
-                                    },
-                                    children: et.map((e, t) => (0, n.jsx)(er, {
-                                        index: t,
-                                        children: e
-                                    }, e))
-                                })]
-                            })
-                        })
-                    })
-                }, {}),
-                wrap: !0,
-                dark: !0
-            }, {
-                date: "October 2022",
-                title: "Browser History",
-                src: "browser-history-3.mp4"
-            }, {
-                date: "October 2022",
-                title: "Vercel Homepage",
-                src: "vercel-home.mp4"
-            }, {
                 date: "September 2022",
                 title: "Gooey Shader",
                 src: "gooey.mp4"
