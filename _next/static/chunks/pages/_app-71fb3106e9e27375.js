@@ -2021,7 +2021,7 @@
                           background: "rgba(22, 22, 22, 0.8)"
                       },
                       "@media (max-width: 430px)": {
-                          width: "calc(100% - 69px)",
+                          width: "calc(100% - 59px)",
                           top: "unset",
                           bottom: 0
                       }
