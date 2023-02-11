@@ -2089,16 +2089,18 @@
                         //       children: (0, r.jsx)(eM, {})
                         //   })
                           , (0, r.jsx)(eC, {}), (0, r.jsx)(eE, {
-                              label: "Twitter",
-                              href: "https://twitter.com/bensack_",
-                              children: (0, r.jsx)(eA, {})
-                          }), (0, r.jsx)(eE, {
                               label: "GitHub",
                               href: "https://github.com/ben-sack",
                               children: (0, r.jsx)(c, {
-                                  name: "github"
-                              })
-                          }), (0, r.jsx)(eE, {
+                                name: "github"
+                            })
+                          })
+                        //   , (0, r.jsx)(eE, {
+                        //       label: "Twitter",
+                        //       href: "https://twitter.com/bensack_",
+                        //       children: (0, r.jsx)(eA, {})
+                        //   })
+                          , (0, r.jsx)(eE, {
                               label: "Mail",
                               href: "mailto:yo@bens.market",
                               children: (0, r.jsx)(eP, {})
