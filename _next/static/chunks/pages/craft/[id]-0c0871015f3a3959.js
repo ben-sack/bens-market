@@ -2479,22 +2479,23 @@
                             size: "14",
                             color: "gray11",
                             lineHeight: "24",
-                            css: {
-                                display: "none",
-                                mb: 16,
-                                background: "$amber3",
-                                br: 8,
-                                p: 8,
-                                border: "1px solid $amber4",
-                                color: "$amber11",
-                                svg: {
-                                    size: 16,
-                                    verticalAlign: "middle",
-                                    y: -1,
-                                    mr: 4
-                                }
-                            },
-                            children: [(0, n.jsx)(I.sz, {}), "This prototype requires a pointer device."]
+                            
+                            // css: {
+                            //     display: "none",
+                            //     mb: 16,
+                            //     // background: "$amber3",
+                            //     br: 8,
+                            //     p: 8,
+                            //     // border: "1px solid $amber4",
+                            //     color: "$amber11",
+                            //     svg: {
+                            //         size: 16,
+                            //         verticalAlign: "middle",
+                            //         y: -1,
+                            //         mr: 4
+                            //     }
+                            // },
+                            // children: [(0, n.jsx)(I.sz, {}), "This prototype requires a pointer device."]
                         }), (0, n.jsx)("video", {
                             playsInline: !0,
                             loop: !0,
