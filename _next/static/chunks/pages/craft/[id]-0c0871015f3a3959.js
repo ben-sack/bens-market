@@ -2649,14 +2649,18 @@
                     transition: "background 150ms ease"
                 }),
                 ey = (0, d.iv)({
-                    display: "block",
-                    width: "100%",
+                    position: "relative",
+                    display: "inline-flex",
+                    jc: "center",
+                    ai: "center",
+                    width: "90%",
+                    left: "5%",
                     padding: 0,
                     margin: 0,
                     border: "1px solid $gray4",
                     objectFit: "contain",
                     br: 12,
-                    mb: 32,
+                    // mb: -32,
                     background: "$gray2"
                 });
 
