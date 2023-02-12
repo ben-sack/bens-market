@@ -1343,202 +1343,10 @@
                 };
             let ea = [{
                 date: "January 2023",
-                title: "Adaptive Precision",
-                src: "adaptive-precision-5.mp4",
-                component: (0, n.jsx)(function() {
-                    let {
-                        resolvedTheme: e
-                    } = (0, f.F)(), {
-                        speed: t
-                    } = ep(), r = o.useRef(0), [s, l] = o.useState(!1), [d, u] = o.useState(null), [p, y] = o.useState(null), [w, k] = o.useState(!1), [j, C] = o.useState(null), [A, z] = o.useState(null), [$, S] = o.useState(!1), M = A && "number" == typeof A.start, E = A && A.height < 0, L = Math.abs((null == A ? void 0 : A.height) ? A.height : 0), I = E ? 3 : -3, H = {
-                        type: "spring",
-                        stiffness: 400 / t,
-                        damping: 40
-                    };
-
-                    function W() {
-                        return document.querySelector('[data-index="'.concat(j, '"]'))
-                    }
-                    return o.useEffect(() => {
-                        p || z(null)
-                    }, [p]), (0, g.z)("mousemove", e => {
-                        s || u({
-                            x: e.clientX,
-                            y: e.clientY
-                        })
-                    }, [s]), (0, n.jsxs)(c.x, {
-                        as: h.E.div,
-                        css: {
-                            center: !0,
-                            size: "100%",
-                            cursor: "none"
-                        },
-                        onMouseEnter: () => {
-                            l(!0)
-                        },
-                        onMouseMove: e => {
-                            if (!p) {
-                                u({
-                                    x: e.clientX,
-                                    y: e.clientY
-                                });
-                                return
-                            }
-                            if (M) {
-                                let t = j - A.start,
-                                    r = W();
-                                z({
-                                    ...A,
-                                    endLabel: null == r ? void 0 : r.dataset.time,
-                                    height: 15 * t
-                                })
-                            }
-                        },
-                        onMouseDown: () => {
-                            if (!p || w) return;
-                            let e = W();
-                            document.body.classList.add("cursor-none"), S(!0), z({
-                                width: null == p ? void 0 : p.width,
-                                start: j,
-                                startLabel: null == e ? void 0 : e.dataset.time,
-                                y: d.y
-                            })
-                        },
-                        onMouseLeave: () => {
-                            l(!1)
-                        },
-                        onMouseUp: () => {
-                            document.body.classList.remove("cursor-none"), S(!1), z(null), k(!0), setTimeout(() => {
-                                k(!1)
-                            }, 100)
-                        },
-                        children: [(0, n.jsx)(c.x, {
-                            as: h.E.div,
-                            css: {
-                                br: "$round",
-                                position: "fixed",
-                                zIndex: 2,
-                                pointerEvents: "none"
-                            },
-                            initial: !1,
-                            animate: {
-                                opacity: s ? 1 : 0,
-                                left: null == d ? void 0 : d.x,
-                                top: null == d ? void 0 : d.y,
-                                width: p ? p.width : 32,
-                                height: p ? 4 : 32,
-                                background: $ ? "var(--colors-gray9)" : "var(--colors-gray7)"
-                            },
-                            transition: H
-                        }, e), (0, n.jsx)(x.M, {
-                            children: A && (0, n.jsx)(c.x, {
-                                as: h.E.div,
-                                css: {
-                                    position: "fixed",
-                                    background: "$blue9",
-                                    br: 6,
-                                    zIndex: 1,
-                                    pointerEvents: "none",
-                                    overflow: "hidden"
-                                },
-                                style: {
-                                    width: null == A ? void 0 : A.width
-                                },
-                                animate: {
-                                    top: (null == A ? void 0 : A.y) + I,
-                                    ...E && {
-                                        marginTop: -L + I
-                                    },
-                                    height: L
-                                },
-                                transition: H,
-                                exit: {
-                                    opacity: 0,
-                                    transition: {
-                                        duration: .1
-                                    }
-                                },
-                                children: (0, n.jsxs)(i.k, {
-                                    as: h.E.div,
-                                    direction: "column",
-                                    css: {
-                                        "--offset": "8px",
-                                        position: "absolute",
-                                        left: "var(--offset)",
-                                        top: "var(--offset)",
-                                        gap: 4,
-                                        transformOrigin: "var(--offset) var(--offset)",
-                                        "> *": {
-                                            color: "white"
-                                        }
-                                    },
-                                    animate: {
-                                        y: L > 15 ? 1 : -6.5,
-                                        scale: L > 15 ? 1 : .8
-                                    },
-                                    transition: H,
-                                    children: [(0, n.jsx)(a.x, {
-                                        size: "13",
-                                        lineHeight: "12",
-                                        children: E ? (0, n.jsxs)(n.Fragment, {
-                                            children: [null == A ? void 0 : A.endLabel, " - ", null == A ? void 0 : A.startLabel]
-                                        }) : (0, n.jsxs)(n.Fragment, {
-                                            children: [null == A ? void 0 : A.startLabel, " - ", null == A ? void 0 : A.endLabel]
-                                        })
-                                    }), (0, n.jsx)(a.x, {
-                                        as: h.E.div,
-                                        weight: "500",
-                                        lineHeight: "16",
-                                        animate: {
-                                            opacity: L > 30 ? 1 : 0
-                                        },
-                                        transition: H,
-                                        children: "New Event"
-                                    })]
-                                })
-                            })
-                        }), (0, n.jsx)(i.k, {
-                            direction: "column",
-                            css: {
-                                width: "calc(100% - 400px)",
-                                py: 64
-                            },
-                            onMouseMove: () => {
-                                if (null !== j) {
-                                    let e = document.querySelector('[data-index="'.concat(j, '"]'));
-                                    if (!e) return;
-                                    let {
-                                        x: t,
-                                        y: r,
-                                        width: n
-                                    } = e.getBoundingClientRect();
-                                    y({
-                                        width: n
-                                    }), u({
-                                        x: t,
-                                        y: r - 2
-                                    })
-                                }
-                            },
-                            onMouseLeave: () => {
-                                y(null)
-                            },
-                            children: (0, n.jsx)(m.Provider, {
-                                value: {
-                                    setHoveredIndex: C,
-                                    indexRef: r
-                                },
-                                children: v.map((e, t) => (0, n.jsx)(b, {
-                                    time: e,
-                                    isLast: t === v.length - 1
-                                }, e))
-                            })
-                        })]
-                    })
-                }, {}),
-                wrap: 420,
-                requiresPointer: !0
-            }, {
+                title: "Beaded Necklace",
+                src: "peach.mp4"
+            }, 
+            {
                 date: "January 2023",
                 title: "Fractional Slider",
                 src: "fractional-slider.mp4",
@@ -1598,6 +1406,7 @@
                             center: !0,
                             position: "relative",
                             cursor: "ew-resize",
+                            
                             overflow: "hidden",
                             transform: "translateZ(0)",
                             br: "inherit"
@@ -2094,6 +1903,7 @@
                                     height: p,
                                     flexGrow: 1,
                                     position: "relative",
+                                    
                                     overflow: "hidden",
                                     background: "$gray6",
                                     willChange: "width, height, border-radius",
@@ -2647,6 +2457,7 @@
                                 br: 12,
                                 center: !0,
                                 background: "$gray2",
+                                display: "none",
                                 overflow: "hidden",
                                 position: "relative",
                                 userSelect: "none",
@@ -2837,7 +2648,7 @@
                     transition: "background 150ms ease"
                 }),
                 ey = (0, d.iv)({
-                    display: "none",
+                    display: "block",
                     width: "100%",
                     padding: 0,
                     margin: 0,

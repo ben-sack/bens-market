@@ -78,6 +78,7 @@ button {
     cursor: ew-resize
 }
 
+
 .cursor-resizing-ew * * {
     -webkit-user-select: none;
     -moz-user-select: none;
