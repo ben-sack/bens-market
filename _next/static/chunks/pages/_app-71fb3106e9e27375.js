@@ -1567,7 +1567,7 @@
               y = i.forwardRef(function() {
                   let {
                       resolvedTheme: e
-                  } = (0, f.F)(), [t, n] = i.useState(!1), o = i.useRef(!1), a = (0, m.c)("/_next/static/blow.mp3"), s = "dark" === e ? "dark" : "light";
+                  } = (0, f.F)(), [t, n] = i.useState(!1), o = i.useRef(!1), a = (0, m.c)("/_next/static/poof.mp3"), s = "dark" === e ? "dark" : "light";
                   i.useEffect(() => n(!0), []);
                   let l = (0, d.q)(v[s].rotate, g),
                       u = (0, d.q)(v[s].r, g),
