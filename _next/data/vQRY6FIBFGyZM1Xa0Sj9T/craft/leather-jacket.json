@@ -1,0 +1,12 @@
+{
+    "pageProps": {
+        "id": "leather-jacket",
+        "date": "January 2023",
+        "title": "Leather Jacket",
+        "src": "peach.mp4",
+        "component": null,
+        "wrap": 420,
+        "requiresPointer": true
+    },
+    "__N_SSP": true
+}

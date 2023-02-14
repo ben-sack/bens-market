@@ -1,16 +1,1 @@
-{
-    "props": {
-        "pageProps": {
-            "lastVisitor": {
-                "country": "US",
-                "city": "Los Angeles"
-            }
-        },
-        "__N_SSP": true
-    },
-    "page": "/",
-    "query": {
-        "country": "US",
-        "city": "Boardman"
-    }
-}
+{"pageProps":{"lastVisitor":{"country":"US","city":"Los Angeles"}},"__N_SSP":true}

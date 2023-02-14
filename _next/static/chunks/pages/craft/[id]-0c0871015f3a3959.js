@@ -1348,15 +1348,15 @@
             }, 
             {
                 date: "January 2023",
-                title: "Fractional Slider",
-                src: "fractional-slider.mp4",
+                title: "Leather Jacket",
+                src: "peach.mp4",
                 component: (0, n.jsx)(function() {
                     let e = o.useRef(),
                         [t, r] = o.useState(0),
                         [i, s] = o.useState(!0),
                         a = -Math.round(t / 7.5),
                         l = o.useRef(0),
-                        d = (0, j.c)("/static/tick.mp3", {
+                        d = (0, j.c)("/static/blow.mp3", {
                             playbackRate: (0, k.uZ)(.1 * Math.abs(a), 1, 2)
                         });
 
@@ -2225,6 +2225,11 @@
             //     title: "Vercel Homepage",
             //     src: "vercel-home.mp4"
             // }, 
+            {
+                date: "September 2022",
+                title: "Studded Belt",
+                src: "peach.mp4"
+            },
             {
                 date: "September 2022",
                 title: "Gooey Shader",

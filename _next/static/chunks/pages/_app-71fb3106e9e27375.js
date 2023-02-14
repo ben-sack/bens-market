@@ -2463,10 +2463,6 @@
                       }), (0, r.jsx)("meta", {
                           name: "twitter:card",
                           content: "summary_large_image"
-                      }), !ey.r8 && (0, r.jsx)("script", {
-                          defer: !0,
-                          src: "/js/script.js",
-                          "data-cf-beacon": '{"token": "d49bf49f0d75a059c7fb4f5460803075"}'
                       })]
                   }), (0, r.jsx)(s.h, {}), (0, r.jsxs)(f.f, {
                       disableTransitionOnChange: !0,
@@ -2508,10 +2504,10 @@
       },
       5332: function(e, t, n) {
           "use strict";
-
+// CDN CDN CDN
           function r(e) {
               let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : .01;
-              return "".concat("https://cdn.rauno.me", "/").concat(e, "#t=").concat(t)
+              return "".concat("/assets", "/").concat(e, "#t=").concat(t)
           }
 
           function i(e) {

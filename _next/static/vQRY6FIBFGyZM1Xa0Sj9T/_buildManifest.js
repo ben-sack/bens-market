@@ -2,9 +2,7 @@ self.__BUILD_MANIFEST = function(s, e) {
     return {
         __rewrites: {
             beforeFiles: [],
-            afterFiles: [{
-                source: "/js/script.js"
-            }],
+            afterFiles: [],
             fallback: []
         },
         "/": [s, e, "static/chunks/pages/index-4456358371833828.js"],

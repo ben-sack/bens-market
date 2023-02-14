@@ -1,16 +1,1 @@
-{
-    "props": {
-        "pageProps": {
-            "lastVisitor": {
-                "country": "US",
-                "city": "Los Angeles"
-            }
-        },
-        "__N_SSP": true
-    },
-    "page": "/",
-    "query": {
-        "country": "US",
-        "city": "Los Angeles"
-    }
-}
+{"props":{"pageProps":{}},"page":"/projects","query":{},"buildId":"PFKuNz6L6i7sJOFAzLkVV","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}
