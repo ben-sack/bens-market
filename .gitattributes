@@ -1,0 +1,5 @@
+assets/gooey.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/peach.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/rainbow.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/stripes.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/flume.mp4 filter=lfs diff=lfs merge=lfs -text
