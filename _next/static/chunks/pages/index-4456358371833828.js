@@ -654,10 +654,10 @@
                             height: "fit-content",
                             position: "relative",
                             "@touch": {
-                                display: "none"
+                                display: "block"
                             },
                             "@mobile": {
-                                display: "none"
+                                display: "block"
                             }
                         },
                         children: [(0, r.jsxs)(p.x, {
@@ -667,7 +667,7 @@
                             height: "509",
                             viewBox: "0 0 672 509",
                             css: {
-                                maxWidth: 720,
+                                maxWidth: 620,
                                 position: "absolute",
                                 overflow: "visible",
                                 color: "$gray12",

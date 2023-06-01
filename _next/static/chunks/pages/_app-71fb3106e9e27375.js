@@ -2079,15 +2079,16 @@
                             children: (0, r.jsx)(ej, {})
                             }),
                             (0, r.jsx)(eE, {
-                              href: "/craft",
-                              label: "Market",
+                            //   href: "/craft",
+                              href: "",
+                              label: "🚧",
                               children: (0, r.jsx)(eR, {})
                           }), 
-                        //   (0, r.jsx)(eE, {
-                        //       href: "",
-                        //       label: "❌ 🚧 ❌",
-                        //       children: (0, r.jsx)(eM, {})
-                        //   })
+                          (0, r.jsx)(eE, {
+                              href: "",
+                              label: "🚧",
+                              children: (0, r.jsx)(eM, {})
+                          })
                           , (0, r.jsx)(eC, {}), (0, r.jsx)(eE, {
                               label: "GitHub",
                               href: "https://github.com/ben-sack",
