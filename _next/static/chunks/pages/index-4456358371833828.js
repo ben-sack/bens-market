@@ -572,16 +572,14 @@
                             children: "m"
                         }), "ake people feel something. Da", (0, r.jsx)(G, {
                             children: "t"
-                        }), "a engi", (0, r.jsx)(G, {
-                            children: "n"
-                        }), "eer unsatisfiably", (0, r.jsx)(U, {
-                            className: T()
-                        }), "curious ", (0, r.jsx)(p.x, {
-                            css: {
-                                display: "inline-block",
-                                fontStyle: "italic"
-                            },
-                            children: " - "
+                        }), "a engineer - ", (0, r.jsx)(G, {
+                        }),
+                        // "", (0, r.jsx)(p.x, {
+                        //     css: {
+                        //         display: "inline-block",
+                        //         fontStyle: "italic"
+                        //     },
+                        //     children: " - "
                         // }), " Trying to", (0, r.jsx)(q, {
                         //     className: T({
                         //         css: {
@@ -592,17 +590,19 @@
                         //     children: "n"
                         // }), "t with code. Relentlessly devoted to the fine details", (0, r.jsx)(Q, {
                             // className: T()
-                        }), " Always seeking o", (0, r.jsx)(G, {
-                            children: "u"
-                        }), "t the", (0, r.jsx)(Y, {
-                            className: T({
-                                css: {
-                                    size: 23
-                                }
-                            })
-                        }), "cutting edge in my craft. Currently at ", (0, r.jsx)(y, {
+                        // }), 
+                        // " Always seeking o", (0, r.jsx)(G, {
+                        //     children: "u"
+                        // }), "t the", (0, r.jsx)(Y, {
+                        //     className: T({
+                        //         css: {
+                        //             size: 23
+                        //         }
+                        //     })
+                        // }),
+                         " Currently at ", (0, r.jsx)(y, {
                             children: "Disney"
-                        }), ". Previously at", " ", (0, r.jsx)(y, {
+                        }), " Previously at", " ", (0, r.jsx)(y, {
                             children: "Progressive"
                         }), "."]
                     })]
