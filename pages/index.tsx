@@ -8,6 +8,32 @@ import Box from '../components/Box'
 import { css, keyframes, styled } from '../stitches.config'
 import { assetUrl, clamp } from '../lib/utils'
 
+// ─── Shuffle letters ───────────────────────────────────────────────────────
+function shuffleLetters(el: HTMLElement, options: { iterations?: number } = {}) {
+  const { iterations = 8 } = options
+  const chars = 'abcdefghijklmnopqrstuvwxyz0123456789'
+  const original = el.textContent ?? ''
+  const letters = original.split('')
+  const nonSpace = letters.reduce<number[]>((acc, c, i) => {
+    if (!/\s/.test(c)) acc.push(i)
+    return acc
+  }, [])
+  let timer: ReturnType<typeof setTimeout>
+  function step(round: number) {
+    if (round > nonSpace.length) { el.textContent = original; return }
+    const cur = [...letters]
+    for (let i = Math.max(round, 0); i < nonSpace.length; i++) {
+      cur[nonSpace[i]] = i < round + iterations
+        ? chars[Math.floor(Math.random() * chars.length)]
+        : ''
+    }
+    el.textContent = cur.join('')
+    timer = setTimeout(() => step(round + 1), 1000 / 30)
+  }
+  step(-iterations)
+  return () => clearTimeout(timer)
+}
+
 // ─── Types ─────────────────────────────────────────────────────────────────
 interface CarouselItem {
   type: string
@@ -357,6 +383,115 @@ function BenLetters() {
   )
 }
 
+// ─── Time / location ─────────────────────────────────────────────────────────
+function Dot() {
+  return <Box css={{ size: 2, br: 9999, bc: '$gray8', flexShrink: 0 }} />
+}
+
+function TimeLocation() {
+  const headerRef = useRef<HTMLDivElement>(null)
+  const timeRef = useRef<HTMLSpanElement>(null)
+  const locationRef = useRef<HTMLSpanElement>(null)
+  const lastVisitorRef = useRef<HTMLSpanElement>(null)
+  const [mounted, setMounted] = useState(false)
+  const [time, setTime] = useState('')
+  const [visitor, setVisitor] = useState<{ city: string; country: string } | null>(null)
+  const [countryName, setCountryName] = useState<string | null>(null)
+
+  useEffect(() => setMounted(true), [])
+
+  useEffect(() => {
+    function tick() {
+      return new Date().toLocaleTimeString('en-US', {
+        timeZone: 'America/Los_Angeles',
+        hour: 'numeric',
+        minute: '2-digit',
+        second: '2-digit',
+      })
+    }
+    setTime(tick())
+    const id = setInterval(() => setTime(tick()), 1000)
+    return () => clearInterval(id)
+  }, [])
+
+  useEffect(() => {
+    fetch('https://ipapi.co/json/')
+      .then((r) => r.json())
+      .then((d) => {
+        if (d.city && d.country_code) setVisitor({ city: d.city, country: d.country_code })
+      })
+      .catch(() => {})
+  }, [])
+
+  useEffect(() => {
+    if (!visitor?.country) return
+    const dn = new Intl.DisplayNames(['en'], { type: 'region' })
+    setCountryName(dn.of(visitor.country) ?? visitor.country)
+  }, [visitor])
+
+  useEffect(() => {
+    if (!mounted) return
+    if (headerRef.current) headerRef.current.style.opacity = '1'
+    if (timeRef.current) shuffleLetters(timeRef.current, { iterations: 10 })
+    if (locationRef.current) shuffleLetters(locationRef.current, { iterations: 10 })
+    if (lastVisitorRef.current) shuffleLetters(lastVisitorRef.current, { iterations: 10 })
+  }, [mounted])
+
+  // Keep a stable placeholder height before mount to avoid layout shift
+  if (!mounted) return <div style={{ height: 28, marginBottom: 12 }} />
+
+  const textStyle: React.CSSProperties = {
+    fontSize: 14,
+    color: 'var(--colors-gray10)',
+    fontFamily: 'var(--fonts-body)',
+  }
+
+  return (
+    <header
+      ref={headerRef}
+      style={{
+        opacity: 0,
+        marginBottom: 12,
+        height: 28,
+        overflow: 'hidden',
+        display: 'flex',
+        alignItems: 'center',
+        gap: 8,
+        transition: 'opacity 200ms ease',
+      }}
+    >
+      <span ref={timeRef} style={{ ...textStyle, fontVariantNumeric: 'tabular-nums', minWidth: 90 }}>
+        {time}
+      </span>
+
+      <Dot />
+
+      <span ref={locationRef} style={textStyle}>
+        Venice, California
+      </span>
+
+      {visitor && countryName && (
+        <>
+          <Dot />
+          <span ref={lastVisitorRef} style={textStyle}>
+            Last visit from{' '}
+            <a
+              href={`https://en.wikipedia.org/wiki/${visitor.city.replace(/ /g, '_')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--colors-gray12)')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = '')}
+              style={{ transition: 'color 150ms ease' }}
+            >
+              {visitor.city}, {countryName}
+            </a>
+          </span>
+        </>
+      )}
+    </header>
+  )
+}
+
 // ─── Hero text ───────────────────────────────────────────────────────────────
 function HeroText() {
   return (
@@ -437,6 +572,7 @@ export default function Home() {
           '@mobile': { mt: 0, mb: 32, mx: 'unset' },
         }}
       >
+        <TimeLocation />
         <HeroText />
       </Box>
 
